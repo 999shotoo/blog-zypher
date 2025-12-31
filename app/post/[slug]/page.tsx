@@ -86,24 +86,24 @@ export default async function PostPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       
-      <div className="max-w-[680px] mx-auto px-5 py-5 min-h-screen flex flex-col sm:px-[15px] xs:px-3">
-      <header className="sticky top-0 bg-background z-[100] border-b-2 border-border pb-5 mb-10 pt-5 -mt-5 sm:pb-[15px] sm:mb-[30px]">
-        <div className="flex items-center justify-between mb-5">
-          <Link href="/" className="font-mono text-sm text-[#0000ee] dark:text-[#6b9eff] no-underline inline-block hover:underline">
+      <div className="max-w-[680px] mx-auto px-5 py-5 min-h-screen flex flex-col md:px-4 sm:px-3 xs:px-2">
+      <header className="sticky top-0 bg-background z-[100] border-b-2 border-border pb-5 mb-10 pt-5 -mt-5 sm:pb-4 sm:mb-8">
+        <div className="flex items-center justify-between mb-5 sm:mb-4">
+          <Link href="/" className="font-mono text-sm md:text-[13px] sm:text-xs text-[#0000ee] dark:text-[#6b9eff] no-underline inline-block hover:underline">
             ← back to home
           </Link>
           <ThemeToggle />
         </div>
-        <h1 className="text-[28px] md:text-2xl sm:text-[21px] font-bold leading-tight mb-2 text-foreground">{post.title}</h1>
-        <time className="font-mono text-[13px] text-muted-foreground">{post.date} || anonymous</time>
+        <h1 className="text-[28px] lg:text-[26px] md:text-2xl sm:text-xl xs:text-lg font-bold leading-tight mb-2 text-foreground">{post.title}</h1>
+        <time className="font-mono text-[13px] md:text-xs sm:text-[11px] text-muted-foreground">{post.date} || anonymous</time>
       </header>
 
-      <main className="flex-1 mb-10 text-[17px] md:text-base sm:text-[15px] xs:text-sm leading-[1.7] prose-retro">
+      <main className="flex-1 mb-10 text-[17px] lg:text-base md:text-[15px] sm:text-sm xs:text-[13px] leading-relaxed prose-retro">
         <ReactMarkdown rehypePlugins={[rehypeRaw]}>{post.content}</ReactMarkdown>
       </main>
 
-      <footer className="border-t-2 border-border pt-5 mt-10 text-center">
-        <Link href="/" className="font-mono text-sm text-[#0000ee] dark:text-[#6b9eff] no-underline inline-block hover:underline">
+      <footer className="border-t-2 border-border pt-5 mt-10 text-center sm:pt-4 sm:mt-8">
+        <Link href="/" className="font-mono text-sm md:text-[13px] sm:text-xs text-[#0000ee] dark:text-[#6b9eff] no-underline inline-block hover:underline">
           ← back to all posts
         </Link>
       </footer>

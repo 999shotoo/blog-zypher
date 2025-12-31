@@ -127,28 +127,28 @@
 
 /* Custom styles for markdown content in posts */
 .prose-retro h1 {
-  @apply text-[28px] font-bold leading-tight mt-[30px] mb-[15px] first:mt-0 text-foreground;
+  @apply text-[28px] lg:text-[26px] md:text-2xl sm:text-xl xs:text-lg font-bold leading-tight mt-[30px] mb-[15px] first:mt-0 text-foreground sm:mt-6 sm:mb-3;
 }
 
 .prose-retro h2 {
-  @apply text-[22px] font-bold leading-tight mt-[25px] mb-3 first:mt-0 text-foreground;
+  @apply text-[22px] lg:text-xl md:text-lg sm:text-base xs:text-[15px] font-bold leading-tight mt-[25px] mb-3 first:mt-0 text-foreground sm:mt-5 sm:mb-2;
 }
 
 .prose-retro h3 {
-  @apply text-lg font-bold mt-5 mb-2.5 first:mt-0 text-foreground;
+  @apply text-lg md:text-base sm:text-[15px] xs:text-sm font-bold mt-5 mb-2.5 first:mt-0 text-foreground sm:mt-4 sm:mb-2;
 }
 
 .prose-retro p {
-  @apply mb-[15px] text-foreground;
+  @apply mb-[15px] sm:mb-3 text-foreground;
 }
 
 .prose-retro ul,
 .prose-retro ol {
-  @apply my-[15px] pl-[35px];
+  @apply my-[15px] sm:my-3 pl-[35px] md:pl-7 sm:pl-5;
 }
 
 .prose-retro li {
-  @apply mb-2;
+  @apply mb-2 sm:mb-1.5;
 }
 
 .prose-retro a {
@@ -156,11 +156,11 @@
 }
 
 .prose-retro code {
-  @apply font-mono bg-muted px-1.5 py-0.5 text-sm border border-border text-foreground;
+  @apply font-mono bg-muted px-1.5 py-0.5 text-sm md:text-[13px] sm:text-xs border border-border text-foreground;
 }
 
 .prose-retro pre {
-  @apply bg-muted border border-border p-[15px] overflow-x-auto my-5 font-mono text-sm leading-normal;
+  @apply bg-muted border border-border p-[15px] md:p-3 sm:p-2.5 overflow-x-auto my-5 sm:my-4 font-mono text-sm md:text-[13px] sm:text-xs leading-normal;
 }
 
 .prose-retro pre code {
@@ -168,15 +168,15 @@
 }
 
 .prose-retro blockquote {
-  @apply border-l-[3px] border-border pl-5 my-5 text-muted-foreground italic;
+  @apply border-l-[3px] border-border pl-5 md:pl-4 sm:pl-3 my-5 sm:my-4 text-muted-foreground italic;
 }
 
 .prose-retro hr {
-  @apply border-0 border-t border-border my-[30px];
+  @apply border-0 border-t border-border my-[30px] sm:my-6;
 }
 
 .prose-retro img {
-  @apply my-5 rounded-lg;
+  @apply my-5 sm:my-4 rounded-lg;
 }
 
 /* Disable copy and default browser behaviors */

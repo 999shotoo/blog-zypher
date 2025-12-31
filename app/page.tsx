@@ -16,10 +16,10 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       
-      <div className="max-w-[680px] mx-auto px-5 py-5 min-h-screen flex flex-col md:px-4 sm:px-3 xs:px-2">
+      <div className="max-w-[680px] mx-auto px-5 py-5 min-h-screen flex flex-col md:px-4 sm:px-2">
       <header className="border-b-2 border-border pb-5 mb-10 sm:pb-4 sm:mb-8">
         <div className="flex items-center justify-between mb-1.5">
-          <h1 className="font-mono text-3xl lg:text-[32px] md:text-[28px] sm:text-2xl xs:text-xl font-bold text-foreground">~/blog</h1>
+          <h1 className="font-mono text-3xl lg:text-[32px] md:text-[28px] sm:text-xl font-bold text-foreground">~/blog</h1>
           <ThemeToggle />
         </div>
         <p className="text-sm md:text-[13px] sm:text-xs text-muted-foreground italic">thoughts and observations</p>

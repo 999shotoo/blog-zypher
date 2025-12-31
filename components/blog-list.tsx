@@ -75,7 +75,7 @@ export function BlogList({ posts }: BlogListProps) {
           {currentPosts.map((post) => (
             <article key={post.slug} className="border-l-[3px] border-border pl-[15px] md:pl-3 sm:pl-2.5 transition-colors hover:border-foreground">
               <time className="font-mono text-[13px] md:text-xs sm:text-[11px] text-muted-foreground block mb-1.5 sm:mb-1">{post.date}</time>
-              <h2 className="text-2xl lg:text-[22px] md:text-xl sm:text-lg xs:text-base font-bold leading-tight m-0">
+              <h2 className="text-2xl lg:text-[22px] md:text-xl sm:text-base font-bold leading-tight m-0">
                 <Link href={`/post/${post.slug}`} className="text-[#0000ee] dark:text-[#6b9eff] no-underline visited:text-[#551a8b] dark:visited:text-[#b48eff] hover:underline">
                   {post.title}
                 </Link>

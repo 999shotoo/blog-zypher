@@ -127,15 +127,15 @@
 
 /* Custom styles for markdown content in posts */
 .prose-retro h1 {
-  @apply text-[28px] lg:text-[26px] md:text-2xl sm:text-xl xs:text-lg font-bold leading-tight mt-[30px] mb-[15px] first:mt-0 text-foreground sm:mt-6 sm:mb-3;
+  @apply text-[28px] lg:text-[26px] md:text-2xl sm:text-lg font-bold leading-tight mt-[30px] mb-[15px] first:mt-0 text-foreground sm:mt-6 sm:mb-3;
 }
 
 .prose-retro h2 {
-  @apply text-[22px] lg:text-xl md:text-lg sm:text-base xs:text-[15px] font-bold leading-tight mt-[25px] mb-3 first:mt-0 text-foreground sm:mt-5 sm:mb-2;
+  @apply text-[22px] lg:text-xl md:text-lg sm:text-[15px] font-bold leading-tight mt-[25px] mb-3 first:mt-0 text-foreground sm:mt-5 sm:mb-2;
 }
 
 .prose-retro h3 {
-  @apply text-lg md:text-base sm:text-[15px] xs:text-sm font-bold mt-5 mb-2.5 first:mt-0 text-foreground sm:mt-4 sm:mb-2;
+  @apply text-lg md:text-base sm:text-sm font-bold mt-5 mb-2.5 first:mt-0 text-foreground sm:mt-4 sm:mb-2;
 }
 
 .prose-retro p {

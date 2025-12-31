@@ -86,7 +86,7 @@ export default async function PostPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       
-      <div className="max-w-[680px] mx-auto px-5 py-5 min-h-screen flex flex-col md:px-4 sm:px-3 xs:px-2">
+      <div className="max-w-[680px] mx-auto px-5 py-5 min-h-screen flex flex-col md:px-4 sm:px-2">
       <header className="sticky top-0 bg-background z-[100] border-b-2 border-border pb-5 mb-10 pt-5 -mt-5 sm:pb-4 sm:mb-8">
         <div className="flex items-center justify-between mb-5 sm:mb-4">
           <Link href="/" className="font-mono text-sm md:text-[13px] sm:text-xs text-[#0000ee] dark:text-[#6b9eff] no-underline inline-block hover:underline">
@@ -94,11 +94,11 @@ export default async function PostPage({ params }: PageProps) {
           </Link>
           <ThemeToggle />
         </div>
-        <h1 className="text-[28px] lg:text-[26px] md:text-2xl sm:text-xl xs:text-lg font-bold leading-tight mb-2 text-foreground">{post.title}</h1>
+        <h1 className="text-[28px] lg:text-[26px] md:text-2xl sm:text-lg font-bold leading-tight mb-2 text-foreground">{post.title}</h1>
         <time className="font-mono text-[13px] md:text-xs sm:text-[11px] text-muted-foreground">{post.date} || anonymous</time>
       </header>
 
-      <main className="flex-1 mb-10 text-[17px] lg:text-base md:text-[15px] sm:text-sm xs:text-[13px] leading-relaxed prose-retro">
+      <main className="flex-1 mb-10 text-[17px] lg:text-base md:text-[15px] sm:text-[13px] leading-relaxed prose-retro">
         <ReactMarkdown rehypePlugins={[rehypeRaw]}>{post.content}</ReactMarkdown>
       </main>
 
